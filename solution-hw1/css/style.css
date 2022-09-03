@@ -1,0 +1,35 @@
+.page-container {
+    background-color: bisque;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin: auto;
+    /* text-align: center; */
+}
+
+
+.page-header {
+  text-align: center;
+}
+
+.items {
+  text-align: center;
+}
+
+.apple {
+  text-align: center;
+
+}
+
+.flavor a:hover {background-color: #f1f1f1}
+
+.dropdown-container{
+  background-color: #f1f1f1;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+
+}
+
+.dropbdown-icon {
+  float: right;
+}
