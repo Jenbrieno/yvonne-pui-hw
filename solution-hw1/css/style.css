@@ -1,5 +1,4 @@
 .page-container {
-    background-color: bisque;
     grid-template-columns: auto auto auto;
     padding: 10px;
     margin: auto;
@@ -11,15 +10,37 @@
   text-align: center;
 }
 
-.items {
+.link {
   text-align: center;
 }
 
-.apple {
+.contents {
   text-align: center;
-
 }
 
+a:hover {
+  background-color: yellow;
+  
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.text {
+    text-align: left; 
+    font-size: 10px;
+    margin: auto; 
+    padding-left: 10px;
+    width: 120px;
+}
+
+.cart-text {
+  font-size: 10px;
+  margin: auto; 
+  padding-left: 10px;
+  width: 120;
+}
 .flavor a:hover {background-color: #f1f1f1}
 
 .dropdown-container{
@@ -32,4 +53,8 @@
 
 .dropbdown-icon {
   float: right;
+}
+
+.image {
+  border: 1px solid black;
 }
