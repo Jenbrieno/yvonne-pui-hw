@@ -1,9 +1,7 @@
 .page-container {
-    grid-template-columns: auto auto auto;
     padding: 10px;
     margin: auto;
-    /* text-align: center; */
-}
+  }
 
 
 .page-header {
@@ -11,7 +9,16 @@
 }
 
 .link {
+  font-size: 12px;
   text-align: center;
+  margin-bottom:60px;
+  border-top: 2px solid black;
+}
+
+.page-title {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .contents {
@@ -20,8 +27,17 @@
 
 a:hover {
   background-color: yellow;
-  
 }
+
+.image-text {
+  text-align: center;
+}
+
+/* .image-text:hover {
+  text-align: center;
+  background-color: yellow;
+  width: fit-content;
+} */
 
 a:link {
   text-decoration: none;
@@ -31,8 +47,8 @@ a:link {
     text-align: left; 
     font-size: 10px;
     margin: auto; 
-    padding-left: 10px;
-    width: 120px;
+    padding-left: 2px;
+    width: 100px;
 }
 
 .cart-text {
@@ -40,7 +56,9 @@ a:link {
   margin: auto; 
   padding-left: 10px;
   width: 120;
+  margin-bottom:24px;
 }
+
 .flavor a:hover {background-color: #f1f1f1}
 
 .dropdown-container{
@@ -57,4 +75,8 @@ a:link {
 
 .image {
   border: 1px solid black;
+}
+
+.total {
+  margin-bottom: 8px;
 }
