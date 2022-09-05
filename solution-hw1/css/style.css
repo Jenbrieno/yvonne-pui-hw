@@ -3,16 +3,33 @@
     margin: auto;
   }
 
-
 .page-header {
   text-align: center;
 }
 
-.link {
+.logo {
+  margin-right: 92%;
+}
+
+.navigation {
   font-size: 12px;
   text-align: center;
-  margin-bottom:60px;
+  margin-bottom:48px;
+  /* border-top: 2px solid black; */
+}
+
+hr.top-divider {
   border-top: 2px solid black;
+}
+
+hr.bottom-divider {
+  border-top: 1px solid black;
+  width: 30%;
+}
+
+.nav {
+  width: fit-content;
+  margin: auto;
 }
 
 .page-title {
@@ -30,14 +47,17 @@ a:hover {
 }
 
 .image-text {
-  text-align: center;
+  width:120px;
+  margin-right: auto;
+  margin-left: auto;
+  /* margin-bottom: 12px; */
 }
 
-/* .image-text:hover {
-  text-align: center;
-  background-color: yellow;
-  width: fit-content;
-} */
+a {
+  display: block;
+  height:auto;
+  width:auto;
+}
 
 a:link {
   text-decoration: none;
@@ -49,28 +69,58 @@ a:link {
     margin: auto; 
     padding-left: 2px;
     width: 100px;
+    margin-bottom: 12px;
+  }
+
+.remove {
+  font-size: 6px;
+  margin-bottom: 12px;
 }
 
-.cart-text {
+.item-summary {
   font-size: 10px;
-  margin: auto; 
-  padding-left: 10px;
-  width: 120;
   margin-bottom:24px;
 }
 
 .flavor a:hover {background-color: #f1f1f1}
 
-.dropdown-container{
-  background-color: #f1f1f1;
+.dropdown-title {
+  text-align: left; 
+  font-size: 10px;
+  margin: auto; 
+  padding-left: 2px;
   width: 100px;
-  height: 20px;
-  text-align: center;
-
+  margin-top: 12px;
 }
 
-.dropbdown-icon {
-  float: right;
+.dropdown-container{
+  background-color: #ffffff;
+}
+
+.selection {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.glazing {
+  width: 100px;
+  font-size: 10px;
+  border: 1px solid black;
+}
+
+.size {
+  width: 100px;
+  font-size: 10px;
+  border: 1px solid black;
+}
+
+.add-to-cart {
+  font-size: 12px;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 24px;
+  justify-content: space-between;
 }
 
 .image {
@@ -78,5 +128,21 @@ a:link {
 }
 
 .total {
+  font-size: 10px;
   margin-bottom: 8px;
 }
+
+.checkoutbtn {
+  font-size: 10px;
+}
+
+/* .dropbdown-button {
+  display:flex;
+  border: 1px solid black;
+  width:100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3px;
+  font-size: 10px;
+  justify-content: space-between;
+} */
