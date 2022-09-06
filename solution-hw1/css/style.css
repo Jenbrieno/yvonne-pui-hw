@@ -1,4 +1,5 @@
-/* For all pages */
+/* The styling for page container, header, logo, top divider
+/* navigation and contents apply to all three pages */ 
 .page-container {
     padding: 10px;
     margin: auto;
@@ -13,6 +14,7 @@
   margin-right: 92%;
 }
 
+/* Styling for the navigation links to other pages */
 .navigations {
   font-size: 12px;
   text-align: center;
@@ -35,13 +37,15 @@ hr.top-divider {
   text-align: center;
 }
 
-/* Gallery lists */
+/* Styling for the Product Gallery Page */
+/* Container for individual item in the gallery for better formatting */
 .individual-item {
   width:120px;
   margin-right: auto;
   margin-left: auto;
 } 
 
+/* Link styling to enable proper hovering effect */
 a {
   display: block;
   height:auto;
@@ -57,11 +61,12 @@ a:link {
   text-decoration: none;
 }
 
+/* Enable modifications on image size and description display
+/* for each individual item under product gallery */
 .image {
   border: 1px solid black;
 }
 
-/* Gallery lists */
 .description {
     text-align: left; 
     font-size: 10px;
@@ -71,7 +76,9 @@ a:link {
     margin-bottom: 12px;
   }
 
-  /* Product Detail Page */
+/* Styling for the Product Detail Page */
+/* Styling for dropdown menu to maintain appropriate size
+/* and the alignment of the text */
 .dropdown-title {
   text-align: left; 
   font-size: 10px;
@@ -98,6 +105,7 @@ a:link {
   border: 1px solid black;
 }
 
+/* Additional styling for the total and the "add-to-cart button */
 .add-to-cart {
   font-size: 12px;
   width: fit-content;
@@ -107,7 +115,7 @@ a:link {
   justify-content: space-between;
 }
 
-  /* Shopping Cart Page */
+  /* Styking for Shopping Cart Page */
 .remove {
   font-size: 6px;
   margin-bottom: 12px;
