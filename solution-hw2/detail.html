@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product Detail Page</title>
+  </head>
+ 
+  <body>
+    <!-- The major section of the website that contains everything from title to bodfy sectionc -->
+    <div class="page-container">
+
+      <div class="logo">
+        <a href="gallery.html">
+          <img src="../solution-hw1/assets/index.svg" alt="Bun Bun Bake Shop Logo" width="200" height="200">
+        </a>
+      </div>
+
+      <hr class="top-divider">  
+
+      <div class="navigations">
+        <a href="gallery.html" class="nav">PRODUCTS</a> 
+        <br><a href="cart.html" class="nav">CART</a>
+      </div>
+
+      <div class="page-title">Original Cinnamon Roll</div>
+
+      <!-- Body section: The list of product under the product gallery-->
+      <div class="detail-contents">
+        <div>
+          <img class="image" src="../solution-hw1/assets/original-cinnamon-roll.jpeg" alt="Original Cinnamon Roll Photo" width="500" height="500">
+        </div>
+
+        <div class="detail-summary">
+          <div class="description">Customize our delicious, hand-made cinnamon roll to your liking!</div>
+          
+          <!-- Link to the dropdown references: https://www.geeksforgeeks.org/how-to-style-a-dropdown-using-css/  -->
+          <div class="selection">
+            <!-- Dropdown menu for customization -->
+            <div class="dropdown-title">Glazing</div>
+                <select class="customize">
+                  <option value="original">Keep original</option>
+                  <option value="s-milk">Sugar milk</option>
+                  <option value="v-milk">Vanilla milk</option>
+                  <option value="chocolate">Double chocolate</option>
+                </select>
+            </div>
+
+            <!-- Dropdown menu for pack size -->
+            <div class="dropdown-title">Pack Size</div>
+                <select class="size">
+                  <option value="original">1</option>
+                  <option value="s-milk">3</option>
+                  <option value="v-milk">6</option>
+                  <option value="chocolate">9</option>
+                </select>
+            </div>
+          </div>
+
+          <div class="add-to-cart">
+            <div class="total-detail">$2.49</div>
+            <button class="action-button">Add to Cart</button>
+          </div>
+
+      </div>
+    </div>
+    
+  </body>
+</html>
