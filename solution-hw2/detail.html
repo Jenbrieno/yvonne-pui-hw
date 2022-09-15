@@ -10,25 +10,28 @@
     <!-- The major section of the website that contains everything from title to bodfy sectionc -->
     <div class="page-container">
 
-      <div class="logo">
-        <a href="gallery.html">
-          <img src="../solution-hw1/assets/index.svg" alt="Bun Bun Bake Shop Logo" width="200" height="200">
-        </a>
+      <div class="logo-nav">
+        <div class="logo">
+          <!-- enable links on logo to make it interactive -->
+          <a href="gallery.html">
+            <img src="../solution-hw1/assets/index.svg" alt="Bun Bun Bake Shop Logo" width="300" height="300">
+          </a>
+        </div>
+
+        <div class="right">
+          <div class="navigations">
+            <a href="gallery.html" class="nav">PRODUCTS</a> 
+            <br><a href="cart.html" class="nav">CART</a>
+          </div>
+          <hr class="top-divider">  
+          <div class="page-title">Original Cinnamon Roll</div>
+        </div>
       </div>
-
-      <hr class="top-divider">  
-
-      <div class="navigations">
-        <a href="gallery.html" class="nav">PRODUCTS</a> 
-        <br><a href="cart.html" class="nav">CART</a>
-      </div>
-
-      <div class="page-title">Original Cinnamon Roll</div>
 
       <!-- Body section: The list of product under the product gallery-->
       <div class="detail-contents">
         <div>
-          <img class="image" src="../solution-hw1/assets/original-cinnamon-roll.jpeg" alt="Original Cinnamon Roll Photo" width="500" height="500">
+          <img class="image-detail" src="../solution-hw1/assets/original-cinnamon-roll.jpeg" alt="Original Cinnamon Roll Photo" width="500" height="500">
         </div>
 
         <div class="detail-summary">
@@ -44,8 +47,7 @@
                   <option value="v-milk">Vanilla milk</option>
                   <option value="chocolate">Double chocolate</option>
                 </select>
-            </div>
-
+      
             <!-- Dropdown menu for pack size -->
             <div class="dropdown-title">Pack Size</div>
                 <select class="size">
@@ -54,12 +56,14 @@
                   <option value="v-milk">6</option>
                   <option value="chocolate">9</option>
                 </select>
+
+            <div class="add-to-cart">
+              <div class="total-detail">$2.49</div>
+              <button class="action-button">Add to Cart</button>
             </div>
+
           </div>
 
-          <div class="add-to-cart">
-            <div class="total-detail">$2.49</div>
-            <button class="action-button">Add to Cart</button>
           </div>
 
       </div>

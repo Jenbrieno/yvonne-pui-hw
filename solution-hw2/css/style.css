@@ -25,7 +25,9 @@
   font-size: 20px;
   gap:20px;
   margin: auto;
-  margin-bottom:48px;
+  margin-top: 12px;
+  margin-bottom:24px;
+  margin-right: 48px;
  justify-content: flex-end;
 }
 
@@ -52,12 +54,6 @@ hr.top-divider {
   text-align: center;
   justify-content:left;
   width: fit-content;
-}
-
-.contents {
-  text-align: center;
-  max-width:700px;
-  margin-left: 500px;
 }
 
 /* Styling for the Product Gallery Page */
@@ -126,10 +122,10 @@ a:link {
   justify-content: space-between;
 }
 
-.detail-summary {
+/* .detail-summary {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .description {
   text-align: left; 
@@ -139,6 +135,19 @@ a:link {
   margin-bottom: 36px;
   padding-left: 2px;
   width: 250px;
+}
+
+.image-detail{
+  border: 3px solid black;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdown-title {
@@ -167,15 +176,13 @@ a:link {
   border: 2.5px solid black;
 }
 
+
 /* Additional styling for the total and the "add-to-cart button */
 .add-to-cart {
   display:flex;
   font-size: 18px;
   width: fit-content;
-  /* margin-right: auto;
-  margin-left: auto; */
   margin-top: 24px;
-  /* justify-content: space-between; */
   align-items: baseline;
 }
 
@@ -199,11 +206,30 @@ a:link {
 }
 
   /* Styling for Shopping Cart Page */
+  .cart-contents {
+    text-align: center;
+    max-width:700px;
+    margin-left: 35%;
+    margin-right: 48px;
+  }
+
+  .image-remove {
+    text-align: left;
+  }
+
 .remove {
   font-size: 8px;
   text-decoration: underline;
   font-weight: 600;
   margin-bottom: 12px;
+  margin-left: 12px;
+}
+
+.item-info {
+  display:flex;
+  align-items: center; 
+  gap: 30px;
+  max-width: 700px;
 }
 
 .item-summary {
@@ -214,24 +240,20 @@ a:link {
 }
 
 /* The total for items in the Profuct Cart section */
-.total-cart {
+.cart-total {
+  display: flex;
+  justify-content:space-between;
   font-size: 18px;
   margin-top: 12px;
   margin-bottom: 12px;
 }
 
+
 hr.bottom-divider {
   border-top: 3px solid black;
-  width: 30%;
 }
 
-.item-info {
-  display:flex;
-  align-items: center; 
-  gap: 30px;
-  max-width: 700px;
-}
-
-.image-remove {
-  text-align: left;
+.right-align {
+  display: flex;
+  justify-content: flex-end;
 }
