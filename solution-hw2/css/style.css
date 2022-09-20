@@ -8,7 +8,6 @@
   padding-right:180px;
 }
 
-
 .logo-nav {
   display:flex;
   align-items: center;
@@ -169,7 +168,6 @@ a:link {
   width: 250px;
 }
 
-
 /* Additional styling for the total and the "add-to-cart button */
 .add-to-cart {
   display:flex;
@@ -199,17 +197,17 @@ a:link {
 }
 
   /* Styling for Shopping Cart Page */
-  .cart-contents {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-left: 300px;
-  }
+.cart-contents {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 300px;
+}
 
-  /* Stlying for the image and the 'remove' button */
-  .image-remove {
-    text-align: left;
-  }
+/* Stlying for the image and the 'remove' button */
+.image-remove {
+  text-align: left;
+}
 
 .remove {
   font-size: 8px;
