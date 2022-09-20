@@ -3,51 +3,45 @@
 .page-container {
   padding: 10px;
   margin: auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  max-width: 1200px;
-  }
+  margin-top: 0;  font-family:Arial, Helvetica, sans-serif;
+  padding-left:180px;
+  padding-right:180px;
+}
 
 
 .logo-nav {
   display:flex;
+  align-items: center;
 }
 
 .logo {
   align-items: flex-start;
   flex: 0 1 auto
+}
 
+/* Styling for the overall top right navigation */
+.top-right{
+  flex:1;
 }
 
 /* Styling for the navigation links to other pages */
 .navigations {
   display:flex;
-  /* justify-content: space-between; */
   font-size: 20px;
   gap:20px;
   margin: auto;
   margin-top: 12px;
   margin-bottom:24px;
   margin-right: 48px;
- justify-content: flex-end;
+  justify-content: flex-end;
 }
-
-.right{
-  flex:1;
-}
-
-.nav {
-  width: fit-content;
-  margin: 0;
-  align-self:flex-end;
-}
-
 
 hr.top-divider {
   border-top: 3px solid black;
 }
 
 .page-title {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 20px;
   margin-top: 48px;
   margin-left: 24px;
@@ -64,9 +58,9 @@ hr.top-divider {
 }
 
 .individual-item {
-  width:220px;
   margin-right: auto;
   margin-left: auto;
+  width:220px;
 } 
 
 /* Link styling to enable proper hovering effect */
@@ -98,9 +92,8 @@ a:link {
     text-align: left; 
     font-size: 18px;
     text-decoration: underline;
-    margin: auto; 
-    /* margin-left: 0px; */
     padding-left: 2px;
+    margin: auto; 
     width: 200px;
   }
 
@@ -108,10 +101,9 @@ a:link {
   text-align: left; 
   font-size: 18px;
   margin: auto; 
-  /* margin-left: 0px; */
   padding-left: 2px;
-  width: 200px;
   margin-bottom: 24px;
+  width: 200px;
 }
 
 /* Styling for the Product Detail Page */
@@ -122,17 +114,18 @@ a:link {
   justify-content: space-between;
 }
 
-/* .detail-summary {
+.detail-summary {
   display: flex;
   flex-direction: column;
-} */
+  justify-content: space-around;
+}
 
 .description {
   text-align: left; 
   font-size: 18px;
   margin: auto; 
   margin-top: 16px;
-  margin-bottom: 36px;
+  margin-bottom: 0px;
   padding-left: 2px;
   width: 250px;
 }
@@ -161,19 +154,19 @@ a:link {
 }
 
 .customize {
-  width: 250px;
   font-size: 18px;
   padding:3px;
   margin-bottom: 12px;
   border: 2.5px solid black;
+  width: 250px;
 }
 
 .size {
-  width: 250px;
   font-size: 18px;
   padding:3px;
   margin-bottom: 12px;
   border: 2.5px solid black;
+  width: 250px;
 }
 
 
@@ -181,15 +174,15 @@ a:link {
 .add-to-cart {
   display:flex;
   font-size: 18px;
-  width: fit-content;
   margin-top: 24px;
   align-items: baseline;
+  align-self: flex-end;
+  width: fit-content;
 }
 
 /* The total for items in the Profuct Detail Page section */
 .total-detail {
   font-size: 18px;
-  /* text-align: left; */
   margin-bottom: 8px;
   margin-right: 40px;
 }
@@ -207,12 +200,13 @@ a:link {
 
   /* Styling for Shopping Cart Page */
   .cart-contents {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    max-width:700px;
-    margin-left: 35%;
-    margin-right: 48px;
+    margin-left: 300px;
   }
 
+  /* Stlying for the image and the 'remove' button */
   .image-remove {
     text-align: left;
   }
@@ -225,13 +219,16 @@ a:link {
   margin-left: 12px;
 }
 
+/* Stlying for the individual item image, text summary & price */
 .item-info {
   display:flex;
   align-items: center; 
   gap: 30px;
+  margin-right: 48px;
   max-width: 700px;
 }
 
+/* Stlying for the text summary */
 .item-summary {
   font-size: 18px;
   margin-bottom:24px;
@@ -239,21 +236,23 @@ a:link {
   width: 300px;
 }
 
-/* The total for items in the Profuct Cart section */
 .cart-total {
   display: flex;
-  justify-content:space-between;
   font-size: 18px;
   margin-top: 12px;
   margin-bottom: 12px;
+  margin-right: 48px;
+  margin-left:30%;
+  justify-content: space-between;
 }
-
 
 hr.bottom-divider {
   border-top: 3px solid black;
+  width: 100%;
 }
 
 .right-align {
   display: flex;
   justify-content: flex-end;
+  margin-right: 48px;
 }
