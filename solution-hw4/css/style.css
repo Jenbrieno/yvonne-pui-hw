@@ -1,0 +1,256 @@
+/* The styling for page container, header, logo, top divider
+/* navigation and contents apply to all three pages */ 
+.page-container {
+  padding: 10px;
+  margin: auto;
+  margin-top: 0;  font-family:Arial, Helvetica, sans-serif;
+  padding-left:180px;
+  padding-right:180px;
+}
+
+.logo-nav {
+  display:flex;
+  align-items: center;
+}
+
+.logo {
+  align-items: flex-start;
+  flex: 0 1 auto
+}
+
+/* Styling for the overall top right navigation */
+.top-right{
+  flex:1;
+}
+
+/* Styling for the navigation links to other pages */
+.navigations {
+  display:flex;
+  font-size: 20px;
+  gap:20px;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom:24px;
+  margin-right: 48px;
+  justify-content: flex-end;
+}
+
+hr.top-divider {
+  border-top: 3px solid black;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 48px;
+  margin-left: 24px;
+  text-align: center;
+  justify-content:left;
+  width: fit-content;
+}
+
+/* Styling for the Product Gallery Page */
+/* Container for individual item in the gallery for better formatting */
+.gallery-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.individual-item {
+  margin-right: auto;
+  margin-left: auto;
+  width:220px;
+} 
+
+/* Link styling to enable proper hovering effect */
+a {
+  display: block;
+  height:auto;
+  width:auto;
+  color: black;
+}
+
+a:hover {
+  background-color: yellow;
+  font-weight: 600;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* Enable modifications on image size and description display
+/* for each individual item under product gallery */
+.image {
+  border: 3px solid black;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.item-name {
+    text-align: left; 
+    font-size: 18px;
+    text-decoration: underline;
+    padding-left: 2px;
+    margin: auto; 
+    width: 200px;
+  }
+
+.price {
+  text-align: left; 
+  font-size: 18px;
+  margin: auto; 
+  padding-left: 2px;
+  margin-bottom: 24px;
+  width: 200px;
+}
+
+/* Styling for the Product Detail Page */
+/* Styling for dropdown menu to maintain appropriate size
+/* and the alignment of the text */
+.detail-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.description {
+  text-align: left; 
+  font-size: 18px;
+  margin: auto; 
+  margin-top: 16px;
+  margin-bottom: 0px;
+  padding-left: 2px;
+  width: 250px;
+}
+
+.image-detail{
+  border: 3px solid black;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-title {
+  text-align: left; 
+  font-size: 18px;
+  margin: auto; 
+  margin-top: 12px;
+  margin-bottom: 8px;
+  padding-left: 2px;
+  width: 250px;
+}
+
+#glazing-options {
+  font-size: 18px;
+  padding:3px;
+  margin-bottom: 12px;
+  border: 2.5px solid black;
+  width: 250px;
+}
+
+#pack-size {
+  font-size: 18px;
+  padding:3px;
+  margin-bottom: 12px;
+  border: 2.5px solid black;
+  width: 250px;
+}
+
+/* Additional styling for the total and the "add-to-cart button */
+.add-to-cart {
+  display:flex;
+  font-size: 18px;
+  margin-top: 24px;
+  align-items: baseline;
+  align-self: flex-end;
+  width: fit-content;
+}
+
+/* The total for items in the Profuct Detail Page section */
+#total-detail {
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-right: 40px;
+}
+
+/* Styling for the two buttons at the end of Product Detail Page */
+/* and the Shopping Cart Page */
+.action-button {
+  background-color: yellow;
+  font-size: 18px;
+  border: 2.5px solid black;
+  padding: 8px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+  /* Styling for Shopping Cart Page */
+.cart-contents {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 300px;
+}
+
+/* Stlying for the image and the 'remove' button */
+.image-remove {
+  text-align: left;
+}
+
+.remove {
+  font-size: 8px;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-left: 12px;
+}
+
+/* Stlying for the individual item image, text summary & price */
+.item-info {
+  display:flex;
+  align-items: center; 
+  gap: 30px;
+  margin-right: 48px;
+  max-width: 700px;
+}
+
+/* Stlying for the text summary */
+.item-summary {
+  font-size: 18px;
+  margin-bottom:24px;
+  text-align: left;
+  width: 300px;
+}
+
+.cart-total {
+  display: flex;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 48px;
+  margin-left:30%;
+  justify-content: space-between;
+}
+
+hr.bottom-divider {
+  border-top: 3px solid black;
+  width: 100%;
+}
+
+.right-align {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 48px;
+}
