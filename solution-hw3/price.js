@@ -1,35 +1,89 @@
 
-let bun = [
+// store the list of glazings to make the 'glazing' dropdown 
+const glazings = [
   {
     glazing: 'Keep Original',
-    price: 2.49,
+    adaptation: 0,
   },
   {
     glazing: 'Sugar Milk',
-    price: 2.49,
+    adaptation: 0,
   },
   {
     glazing: 'Vanilla Milk',
-    price: 2.99,
+    adaptation: 0.5,
   },
   {
     glazing: 'Double Chocolate',
-    price: 3.99,
+    adaptation: 1.5,
   },
 ];
 
-function displayOptions(){
-  let bunGlazing = document.querySelector('#glazing-options');
-  let bunPackSize = document.querySelector('#pack-size');
+// store the list of packsize to make the 'pack size' dropdown 
+const packSize = [
+  {
+    size: 1,
+    adaptation: 1,
+  },
+  {
+    size: 3,
+    adaptation: 3,
+  },
+  {
+    size: 6,
+    adaptation: 5,
+  },
+  {
+    size: 12,
+    adaptation: 10,
+  }
+];
 
-  bunGlazing.innerText = bun.glazing;
-  bunPackSize.innerText = bun.size;
+// retreive information from the glazing list to 
+// set value and text display for the dropdown menu 
+let selectGlazing = document.getElementById ("glazing-options")
+for (let i = 0; i< glazings.length; i++ ) {
+  let opt = document.createElement('option');
+  opt.value = glazings[i]['adaptation'];
+  opt.innerText = glazings[i]['glazing'];
+  console.log(opt);
+  selectGlazing.appendChild(opt);
 }
 
+// retreive information from the packsize list to 
+// set value and text display for the dropdown menu 
+let selectPack = document.getElementById ("pack-size")
+for (let i = 0; i< packSize.length; i++ ) {
+  let opt = document.createElement('option');
+  opt.value = packSize[i]['adaptation'];
+  opt.innerText = packSize[i]['size'];
+  console.log(opt);
+  selectPack.appendChild(opt);
+}
+
+// set the base price of the itme as $2.49
+const basePrice = 2.49;
+
+// change price with selected glazing options
 function glazingChange(element) {
   // get value of selected glazing option
-  const priceChange = element.value;
+  const priceChange = parseFloat(element.value);
 
-// add your code to do update the price ...
-  console.log('Total: ' + priceChange);
+  // calculate the updated price and round it to the nearst hundredth 
+  let packPrice = parseFloat(document.getElementById('pack-size').value);
+  const updatePrice = (basePrice + priceChange) * packPrice;
+  document.getElementById("total-detail").textContent = '$' + Math.round(100*updatePrice)/100;
 }
+
+// change price with selected pack size
+function packChange(element) {
+  // get value of selected pack size
+  const priceChange = parseFloat(element.value);
+
+  // calculate the updated price and round it to the nearst hundredth 
+  let glazingPrice = parseFloat(document.getElementById('glazing-options').value);
+  const updatePrice = (basePrice + glazingPrice) * priceChange;
+  document.getElementById("total-detail").textContent = '$' + Math.round(100*updatePrice)/100;
+}
+
+

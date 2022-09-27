@@ -179,7 +179,7 @@ a:link {
 }
 
 /* The total for items in the Profuct Detail Page section */
-.total-detail {
+#total-detail {
   font-size: 18px;
   margin-bottom: 8px;
   margin-right: 40px;

@@ -4,9 +4,8 @@
   <head>
     <link rel="stylesheet" href="css/style.css">
     <title>Product Detail Page</title>
-
-
-    <script defer src="app.js"></script>
+    
+    <script src="price.js" defer></script>
 
   </head>
  
@@ -45,26 +44,22 @@
           <div class="selection">
             <!-- Dropdown menu for customization -->
             <div class="dropdown-title">Glazing:</div>
-                <select id="glazing-options">
-                  <option value="original">Keep original</option>
-                  <option value="s-milk">Sugar milk</option>
-                  <option value="v-milk">Vanilla milk</option>
-                  <option value="chocolate">Double chocolate</option>
-                </select>
+            <!-- change product price with user input with 'onchange' event -->
+              <select id="glazing-options" onchange="glazingChange(this)">
+              
+              </select>
       
             <!-- Dropdown menu for pack size -->
             <div class="dropdown-title">Pack Size:</div>
-                <select id="pack-size">
-                  <option value="original">1</option>
-                  <option value="s-milk">3</option>
-                  <option value="v-milk">6</option>
-                  <option value="chocolate">9</option>
-                </select>
+             <!-- change product price with user input with 'onchange' event -->
+              <select id="pack-size" onchange="packChange(this)">
+        
+              </select>
           </div>
 
            <!-- Total price and add-to-cart button -->
             <div class="add-to-cart">
-              <div class="total-detail">$2.49</div>
+              <div id="total-detail">$2.49</div>
               <button class="action-button">Add to Cart</button>
             </div>
 
@@ -75,4 +70,4 @@
     
   </body>
 
-<select id="glazingOptions"
+</html>
