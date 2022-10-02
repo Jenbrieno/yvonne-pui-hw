@@ -4,9 +4,11 @@
   <head>
     <link rel="stylesheet" href="css/style.css">
     <title>Product Detail Page</title>
-    
-    <script src="price.js" defer></script>
 
+    <script defer src="rollsData.js"></script>
+    <script defer src="details.js"></script>
+    <script src="price.js" defer></script>
+    <!-- <script defer src="details.js"></script> -->
   </head>
  
   <body>
@@ -27,14 +29,14 @@
             <br><a href="cart.html" class="nav">CART</a>
           </div>
           <hr class="top-divider">  
-          <div class="page-title">Original Cinnamon Roll</div>
+          <div class="page-title"></div>
         </div>
       </div>
 
       <!-- Body section: The list of product under the product gallery-->
       <div class="detail-contents">
         <div>
-          <img class="image-detail" src="../solution-hw3/assets/original-cinnamon-roll.jpeg" alt="Original Cinnamon Roll Photo" width="500" height="500">
+          <img class="image-detail" src="" alt="Original Cinnamon Roll Photo" width="500" height="500">
         </div>
 
         <div class="detail-summary">
@@ -60,7 +62,7 @@
            <!-- Total price and add-to-cart button -->
             <div class="add-to-cart">
               <div id="total-detail">$2.49</div>
-              <button class="action-button">Add to Cart</button>
+              <button class="action-button" onclick="addToCart()">Add to Cart</button>
             </div>
 
         </div>
