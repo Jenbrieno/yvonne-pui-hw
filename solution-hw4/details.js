@@ -3,15 +3,12 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
 
-console.log(rollType);
-
 const headerElement = document.querySelector('.page-title');
 headerElement.innerText = rollType + ' Cinnamon Roll'
 
 // Update the image
 const rollImage = document.querySelector('.image-detail');
 rollImage.src = "../solution-hw4/assets/" + rolls[rollType]['imageFile'];
-console.log(rollImage.src);
 
 const cart = [];
 
@@ -36,6 +33,7 @@ function addToCart() {
         sizeText,
         rolls[rollType]['basePrice'],
     );
+    
     cart.push(rollInfo);
     console.log(cart);
 }

@@ -87,28 +87,3 @@ function packChange(element) {
 }
 
 
-// function addToCart() {
-//   const glazingSelected = document.getElementById("glazing-options");
-//   const glazingText = glazingSelected.options[glazingSelected.selectedIndex].text;
-//   const sizeSelected = document.getElementById("pack-size");
-//   const sizeText = sizeSelected.options[sizeSelected.selectedIndex].text;
-
-//   console.log(glazingText);
-//   console.log(sizeText);
-// }
-
-function glazingText() {
-  const glazingSelected = document.getElementById("glazing-options");
-  const glazingText = glazingSelected.options[glazingSelected.selectedIndex].text;
-  return glazingText;
-}
-
-function sizeText() {
-  const sizeSelected = document.getElementById("pack-size");
-  const sizeText = sizeSelected.options[sizeSelected.selectedIndex].text;
-
-  return sizeText;
-}
-
-
-
