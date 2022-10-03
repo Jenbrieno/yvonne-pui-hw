@@ -25,5 +25,7 @@
 <h2>HW4</h2>
 <strong>Deployed website:</strong> 
 <br>Product Detail Page: https://jenbrieno.github.io/yvonne-pui-hw/solution-hw4/detail.html
+<br>Gallery Page: https://jenbrieno.github.io/yvonne-pui-hw/solution-hw4/gallery.html
+<br>Cart Page: https://jenbrieno.github.io/yvonne-pui-hw/solution-hw4/cart.html
 
 <br><strong>Repository link:</strong> https://github.com/Jenbrieno/yvonne-pui-hw.git
