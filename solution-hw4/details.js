@@ -24,20 +24,27 @@ class Roll {
     }
 }
 
-const glazing = document.querySelector('#glazing-options').innerText;
-const size = document.querySelector('#pack-size').value;
-
-const rollInfo = new Roll(
-    rollType,
-    glazing,
-    size,
-    rolls[rollType]['basePrice'],
-);
-
-cart.push(rollInfo);
-
 function addToCart() {
+    const glazingSelected = document.getElementById("glazing-options");
+    const glazingText = glazingSelected.options[glazingSelected.selectedIndex].text;
+    const sizeSelected = document.getElementById("pack-size");
+    const sizeText = sizeSelected.options[sizeSelected.selectedIndex].text;
+
+    const rollInfo = new Roll(
+        rollType,
+        glazingText,
+        sizeText,
+        rolls[rollType]['basePrice'],
+    );
+    cart.push(rollInfo);
     console.log(cart);
-    console.log(document.querySelector('#glazing-options').value);
-    console.log(document.querySelector('#pack-size').value);
 }
+
+  
+
+
+
+
+
+
+
