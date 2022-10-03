@@ -1,4 +1,4 @@
-// update page title on product details page 
+// update page title on product detail page 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
@@ -6,7 +6,7 @@ const rollType = params.get('roll');
 const headerElement = document.querySelector('.page-title');
 headerElement.innerText = rollType + ' Cinnamon Roll'
 
-// update the image on product details page 
+// update the image on product detail page 
 const rollImage = document.querySelector('.image-detail');
 rollImage.src = "../solution-hw4/assets/" + rolls[rollType]['imageFile'];
 
