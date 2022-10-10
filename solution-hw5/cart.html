@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shopping Cart</title>
+
+    <script defer src="rollsData.js"></script>
+    <script defer src="cart.js"></script>
+
+
+  </head>
+ 
+  <body>
+    <!-- The major section of the website that contains everything from title to bodfy sectionc -->
+    <div class="page-container">
+
+      <div class="logo-nav">
+        <div class="logo">
+          <!-- enable links on logo to make it interactive -->
+          <a href="gallery.html">
+            <img src="../solution-hw1/assets/index.svg" alt="Bun Bun Bake Shop Logo" width="300" height="200">
+          </a>
+        </div>
+
+        <div class="top-right">
+          <div class="navigations">
+            <a href="gallery.html" class="nav">PRODUCTS</a> 
+            <br><a href="cart.html" class="nav">CART</a>
+          </div>
+          <hr class="top-divider">  
+          <div class="page-title">Shopping Cart</div>
+        </div>
+      </div>
+  
+      <!-- Body section: Shopping cart items-->
+      <div class="cart-contents">
+        <div id="roll-list">
+          <template id='rolls-template'>
+            <div class='cart-item'>
+              <div class="item-info">
+                <div class="image-remove">
+                  <img class="image" src="" alt="Original Cinnamon Roll Photo" width = "100" height="100">
+                  <!-- remove button for editing the cart items -->
+                  <div class="remove">Remove</div>
+                </div>
+
+                <!-- item details including customization, size and price -->
+                <div class="item-summary">
+                  <div class='roll-name'></div>
+                  <div class='glazing-options'> </div>
+                  <div class='pack-size'></div>
+                </div>
+                <div class="total"></div>
+              </div>
+
+            </div>
+          </template>
+        </div>
+        
+          <hr class="bottom-divider">  
+
+          <div class="checkout">
+            <div>Total</div> 
+            <div class="cart-total"></div>
+          </div>
+
+          <div class="right-align">
+            <button class="action-button">Checkout</button>
+          </div>
+
+      </div>
+    </div>
+    
+  </body>
+</html>
