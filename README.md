@@ -36,4 +36,10 @@
 
 <br><strong>Repository link:</strong> https://github.com/Jenbrieno/yvonne-pui-hw.git
 
+<h2>HW6</h2>
+<strong>Deployed website:</strong> 
+<br>Cart Page: https://jenbrieno.github.io/yvonne-pui-hw/solution-hw6/gallery.html
+
+<br><strong>Repository link:</strong> https://github.com/Jenbrieno/yvonne-pui-hw.git
+
 
