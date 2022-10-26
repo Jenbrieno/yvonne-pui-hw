@@ -13,9 +13,12 @@ rollImage.src = "../solution-hw6/assets/" + rolls[rollType]['imageFile'];
 // create an empty cart array for later updates
 let cart = [];
 
-let cartData= localStorage.getItem('storedRolls');
-cart = Array.from(JSON.parse(cartData));
-console.log(cart);  
+let cartData = localStorage.getItem('storedRolls');
+if (cartData != null) {
+    cart = Array.from(JSON.parse(cartData));
+    console.log(cart);  
+}
+
  
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice, rollImage) {
