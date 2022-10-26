@@ -18,7 +18,6 @@ if (cartData != null) {
     cart = Array.from(JSON.parse(cartData));
     console.log(cart);  
 }
-
  
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice, rollImage) {
