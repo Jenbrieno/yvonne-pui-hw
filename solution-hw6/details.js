@@ -1,4 +1,4 @@
-// update page title on product detail page 
+// Updates page title on product detail page 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
@@ -6,11 +6,11 @@ const rollType = params.get('roll');
 const headerElement = document.querySelector('.page-title');
 headerElement.innerText = rollType + ' Cinnamon Roll'
 
-// update the image on product detail page 
+// Updates the image on product detail page 
 const rollImage = document.querySelector('.image-detail');
 rollImage.src = "../solution-hw6/assets/" + rolls[rollType]['imageFile'];
 
-// create an empty cart array for later updates
+// Creates an empty cart array for later updates
 let cart = [];
 
 let cartData = localStorage.getItem('storedRolls');
@@ -29,7 +29,7 @@ class Roll {
     }
 }
 
-// get selected options and update the cart array with Roll information
+// Gets selected options and update the cart array with Roll information
 function addToCart() {
     const glazingSelected = document.getElementById("glazing-options");
     const glazingText = glazingSelected.options[glazingSelected.selectedIndex].text;
@@ -52,6 +52,7 @@ function addToCart() {
     console.log(cart);
 }
 
+// Saves the selected items as a string of text
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
     localStorage.setItem('storedRolls',rollArrayString);

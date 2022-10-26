@@ -104,6 +104,7 @@ function deleteRolls(roll) {
   localStorage.setItem('storedRolls', JSON.stringify(Array.from(rollSet)));
 }
 
+// Calculates the total price of the cart
 function calculateTotal(roll){
   let totalPrice = 0;
   for (const roll of rollSet) {
@@ -112,7 +113,6 @@ function calculateTotal(roll){
   const rollTotalElement = document.querySelector('.cart-total'); 
   rollTotalElement.innerText = '$' + totalPrice.toFixed(2);
 }
-
 
 for (const roll of rollSet) {
   console.log(roll);
