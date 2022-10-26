@@ -14,10 +14,10 @@ rollImage.src = "../solution-hw6/assets/" + rolls[rollType]['imageFile'];
 let cart = [];
 
 let cartData = localStorage.getItem('storedRolls');
-if (cartData != null) {
-    cart = Array.from(JSON.parse(cartData));
-    console.log(cart);  
-}
+// if (cartData != null) {
+//     cart = Array.from(JSON.parse(cartData));
+//     console.log(cart);  
+// }
  
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice, rollImage) {
