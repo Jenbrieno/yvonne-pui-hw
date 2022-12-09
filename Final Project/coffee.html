@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <head>
+    <link rel="stylesheet" href="https://use.typekit.net/hyc2lrd.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/Assets/favicon-16x16.png"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <script defer src="coffee.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Game</title>
+  </head>
+
+  <body>
+
+    <div class="topnav">
+      <a class="active" href="coffee.html">Home</a>
+      <a href="Learn more.html">Learn More</a>
+    </div>
+ 
+    <div class="page-container">
+      
+      <div class="left-panel">
+
+        <h2 class="section-title" style="font-size: 20px">Types of Coffee</h2>
+        <p>Click on the drinks to expand the recipe</p>
+
+        <!-- The list of drinks for users to select from -->
+        <div class="list">
+          <button class="individual-coffee-item"> 
+            <img class="image" src="../Final project/Assets/Americano.png" alt="An illustration of Americano" width="120" height=auto><br>
+            <div class="item-name">Americano</div>
+          </button>
+
+          <div class="content">
+          <!-- The recipe of the drink that will expand after selection -->
+            <p> 
+              <p>Shots: <span>3</span> </p>
+              <p>Water: <span>12oz</span> </p>
+              <p>Milk: <span>None</span> </p>
+              <p>Additional Items: <span>None</span> </p>
+            </p>
+          </div>
+
+          <button class="individual-coffee-item">
+            <img class="image" src="../Final project/Assets/Latte.png" alt="An illustration of Cappuccino" width="120" height=auto><br>
+            <div class="item-name">Latte</div>
+          </button>
+          <div class="content">
+            <p> 
+              <p>Shots: <span>2</span> </p>
+              <p>Water: <span>None</span> </p>
+              <p>Milk: <span>12oz</span> </p>
+              <p>Additional Items: <span>Milk Foam</span> </p>
+            </p>
+          </div>
+
+          <button class="individual-coffee-item">
+            <img class="image" src="../Final project/Assets/Flat White.png" alt="An illustration of Flat-White" width="120" height=auto><br>
+            <div class="item-name">Flat White</div>
+          </button>
+          <div class="content">
+            <p> 
+              <p>Shots: <span>3</span> </p>
+              <p>Water: <span>None</span> </p>
+              <p>Milk: <span>12oz</span> </p>
+              <p>Additional Items: <span>None</span> </p>
+            </p>
+          </div>
+
+          <button class="individual-coffee-item">
+            <img class="image" src="../Final project/Assets/Mocha.png" alt="An illustration of Mocha" width="120" height=auto><br>
+            <div class="item-name">Mocha</div>
+          </button>
+          <div class="content">
+            <p> 
+              <p>Shots: <span>2</span> </p>
+              <p>Water: <span>None</span> </p>
+              <p>Milk: <span>12oz</span> </p>
+              <p>Additional Items: <span>Mocha sauce & Milk foam</span> </p>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      
+
+      <div class="drink">
+      <!-- The middle sectin of the page where the cup is located -->
+
+        <h1 style="font-weight:100" class="drink-title">PICK A DRINK</h1>
+
+        <div class="cup">
+          <!-- Displays differnet ingredients added into the cup -->
+          <div class="cup-content"></div>
+          <div class="cup-content-2"></div>
+          <div class="cup-content-3"></div>
+          <div class="cup-content-4"></div>
+          <div class="cup-content-5"></div>
+        </div>
+ 
+        <p>16 OZ</p>
+
+        <div class="button-group">
+          <button id="restart" onCLick="restart()">Restart</button>
+          <button id="finish" onClick="popUp()">Finish</button>
+        </div>
+
+      </div>
+
+
+      <div class="right-panel">
+      <!-- The right panel of the website that includes ingredients control-->
+    
+        <h2 class="section-title" style="font-size: 20px">Shots</h2>
+        <!-- Individual control panel on the right, including section title and buttons -->
+        <div class="ingredients">
+          <p>Click "+" to add 1 shot to the cup</p>
+          <div class="button" >
+            <button id="button-remove" onClick="decreaseShots();removeShots()">-</button>
+            <div id="numberShots">0</div>
+            <button id="button-add" onClick="increaseShots();addShots()">+</button>
+          </div>
+        </div>
+
+        <h2 class="section-title" style="font-size: 20px">Water (oz)</h2>
+        <div class="ingredients">
+          <p>Click "+" to add 6 oz of water to the cup</p>
+          <div class="button">
+            <button id="button-remove" onClick="decreaseWater();removeWater();" >-</button>
+            <div id="numberWater">0</div>
+            <button id="button-add" onClick="increaseWater();addWater();" >+</button>
+          </div>
+        </div>
+
+        <h2 class="section-title" style="font-size: 20px">Milk (oz)</h2>
+        <div class="ingredients">
+          <p>Click "+" to add 6 oz of milk to the cup</p>
+          <div class="button">
+            <button id="button-remove" onClick="decreaseMilk();removeMilk();">-</button>
+            <div id="numberMilk">0</div>
+            <button id="button-add" onClick="increaseMilk();addMilk();">+</button>
+          </div>
+        </div>
+
+        <h2 class="section-title" style="font-size: 20px">Additional Items</h2>
+        <div class="ingredients-additional">
+          <!-- The extra ingredients that are not quantified, presneted as individual buttons -->
+          <div class="additional-items" id="foam" onClick="addFoam()">
+            <img class="image" src="../Final project/Assets/Milk foam.png" alt="An illustration of milk foam" width="80" height=auto><br>
+            <div class="item-name">Milk Foam</div>
+          </div>
+ 
+          <div class="additional-items"id="mocha" onClick="addSauce()">
+            <img class="image" src="../Final project/Assets/Mocha sauce.png" alt="An illustration of mocha sauce" width="80" height=auto><br>
+            <div class="item-name">Mocha Sauce</div>
+          </div>
+        </div>
+
+      </div>
+
+  
+      <div class="popup-background" id="popup-background">
+        <div class="popup-box">
+        <!-- A pop-up window will appear when the user is done adding things into 
+        the cup and clicks on the "Finish" button -->
+          <p id='popup-message'></p>
+          
+          <button id="confirmbtn" onClick="restart()"> Restart </button>
+          <!-- The page will relaod and reset everything when the user clicks
+            on the "restart" button-->
+        </div>
+      </div>
+
+    </div>
+
+</body>

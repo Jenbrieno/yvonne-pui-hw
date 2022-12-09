@@ -1,0 +1,449 @@
+/* Reponsive web */
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .page-container{
+        flex-direction:column;
+        width: 100%;
+    }
+    .list {
+        display:flex;
+        flex-direction: row;
+    }
+    .drink {
+        margin-top:100px;
+        margin-bottom: 100px;
+    }
+    .individual-coffee-item{
+        display: inline-flex;
+        width: 90%;
+    }
+    .mySlides{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .drink{
+      width: 100%;
+      padding: 0;
+    }
+    .right-panel {
+      width: 100%;
+    }
+}
+
+/* Styling of the navigation bar on top of the page*/
+.topnav {
+    display: flex;
+    font-family:montserrat, sans-serif;
+    padding-bottom:20px;
+    padding-top:12px;
+    margin-bottom: 20px;
+    gap:20px;
+    
+}
+
+.topnav a {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration:none;
+    color:black;
+}
+
+.topnav a.active {
+    border-bottom: 3px solid #8E3A0A;
+  }
+
+.topnav a:hover {
+    border-bottom: 3px solid #8E3A0A;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.page-container {
+    display: flex;
+    font-family:montserrat, sans-serif;
+    justify-content: space-between;
+}
+
+/* Styling of the left panel, including the section title, the drink buttons
+and the drop down recipes*/
+.left-panel {
+    width: 60%;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    float:left;
+    font-family: montserrat, sans-serif; 
+}
+
+.left-panel > p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.section-title{
+    width:100%;
+    height:20px;
+    border-radius: 4px;
+    background-color: #B28E6C;
+    margin: 0;
+    color:#ffffff;
+    padding: 4% 0px;
+    text-align:center;
+    position: relative;
+}
+
+
+/* Styling of the list of drink buttons*/
+.list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    overflow:hidden;
+}
+
+.individual-coffee-item{
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin-top: 12px;
+    text-align: center;
+    border-radius: 4%;
+    border:1px solid #989898;
+    background-color: #ffffff;
+    font-size: 15px;
+    color:black;
+
+}
+
+.individual-coffee-item:hover {
+    cursor: pointer;
+    background-color: #B28E6C;
+}
+
+.item-name {
+    color:black;
+    text-align: center; 
+    font-size: 16px;
+    padding-left: 2px;
+    margin: auto; 
+    width: 150px;
+    font-family:poppins, sans-serif;
+}
+
+/* Styling of the drop-down recipes */
+.content {
+    width: 100%;
+    color:black;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    text-align: left;
+    float:left;
+}
+
+.content p  {
+    font-size: large;
+    font-weight: bold;
+}
+
+.content span {
+    font-weight: 100;
+}
+
+/* Styling of the cup panel, including the title, the cup and the buttons */
+.drink {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.drink p {
+    font-weight: 100;   
+}
+
+.cup {
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    border:5px solid #B28E6C;
+    border-radius: 0 0 12% 12%;
+    margin-top: 5%;
+    float: left;
+    overflow: hidden;
+    position:relative;
+}
+
+/* Styling of each individual ingredient added to the cup */
+.cup-content{
+    width: 300px;
+    height:0px;
+    position:absolute;
+    background: linear-gradient(#cf9675 ,#8E3A0A 10%);
+}
+
+.cup-content-2{
+    width: 300px;
+    height:0px;
+    position:absolute;
+    background: linear-gradient(#ebf8ff89 ,#bbe1ff89 30%);
+
+}
+
+.cup-content-3{
+    width: 300px;
+    height:0px;
+    position:absolute;
+    background: linear-gradient(#ebf8ff89 ,#bbe1ff89 50%);
+
+}
+
+.cup-content-4{
+    width: 300px;
+    height:0px;
+    position:absolute;
+    background: linear-gradient(#def7f7, #ffffff 60%);
+}
+
+.cup-content-5{
+    width: 300px;
+    height:0px;
+    position:absolute;
+    background: linear-gradient(#6d2c0b, #562208 60%);
+}
+
+/* Styling of each individual ingredient added to the cup */
+.button-group {
+    display: flex;
+    gap:30%;
+    padding:10px;
+    justify-content: center;
+}
+
+#restart{
+    padding:10px 30px;
+    font-size: medium;
+    color:#8E3A0A;
+    border:2px solid #6d2c0b;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+#finish{
+    padding:10px 30px;
+    font-size: medium;
+    color:#8E3A0A;
+    color:#ffffff;
+    background-color:#8E3A0A;
+    border:2px solid #6d2c0b;
+    border-radius: 8px;
+}
+
+#restart:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 0px #B28E6C;
+}
+
+#finish:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 0px #B28E6C;
+}
+
+/* Styling of the right panel, including all ingredients sections */
+.right-panel {
+    width: 60%;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    float:left;
+}
+
+.ingredients {
+    margin-bottom: 5%;
+}
+
+.ingredients p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+#numberShots {
+    color:black;
+    margin-top: 12px;
+}
+
+#numberWater {
+    color:black;
+    margin-top: 12px;
+}
+
+#numberMilk {
+    color:black;
+    margin-top: 12px;
+}
+
+.button{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8px;
+    padding:5px 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border-color: #8E3A0A;
+}
+
+#button-add{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 12px;
+    padding:5px 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border:2px solid #6d2c0b;
+}
+
+#button-add:hover{
+    cursor:pointer;
+}
+
+#button-remove{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 12px;
+    padding:5px 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border:2px solid #6d2c0b;
+}
+
+#button-remove:hover{
+    cursor:pointer ;
+}
+
+.ingredients-additional {
+    display:flex;
+    flex-direction: row;
+    justify-items: center;
+    gap:10px;
+    font-family: montserrat, sans-serif; 
+}
+
+.additional-items {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin-top: 12px;
+    text-align: center;
+    border-radius: 4%;
+    border:1px solid #989898;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.additional-items:hover{
+    cursor: pointer;
+    background-color: #B28E6C;
+}
+
+/* Styling of the pop-up area, including the background and the pop-up window */
+.popup-background{
+    position:absolute;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background:rgb(190, 190, 190, 0.5);
+    z-index: 2;
+    display: none;
+} 
+
+.popup-box {
+    position:relative;
+    background-color:white;
+    border-radius: 4px;
+    font-size:24px;
+    width: 40%;
+    height: 30%;
+    top: 25%;
+    left: 30%;
+    display:flex;
+    padding:20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#popup-message {
+    text-align: center;
+}
+
+#confirmbtn {
+    margin-top: 10%;
+    padding:10px 30px;
+    font-size: medium;
+    color:#8E3A0A;
+    color:#ffffff;
+    background-color:#8E3A0A;
+    border:2px solid #6d2c0b;
+    border-radius: 8px;
+}
+
+#confirmbtn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 0px #B28E6C;
+}
+
+/* Styling of recipe slides under "Learn More" page */
+.slider-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.mySlides {
+    width:70%;
+    height: auto;
+}
+
+.leftbtn {
+    padding:10px 20px;
+    font-size: medium;
+    color:#8E3A0A;
+    color:#ffffff;
+    background-color:#8E3A0A;
+    border:2px solid #6d2c0b;
+    border-radius: 8px;
+}
+
+.leftbtn:hover {
+   cursor: pointer;
+   color:black;
+   background-color: #ffffff;
+}
+
+.rightbtn {
+    padding:10px 20px;
+    font-size: medium;
+    color:#8E3A0A;
+    color:#ffffff;
+    background-color:#8E3A0A;
+    border:2px solid #6d2c0b;
+    border-radius: 8px;
+}
+
+.rightbtn:hover {
+   cursor: pointer;
+   color:black;
+   background-color: #ffffff;
+}
