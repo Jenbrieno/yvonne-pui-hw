@@ -44,6 +44,6 @@
 
 <h2>Final Project</h2>
 <strong>Deployed website:</strong> 
-<br>Coffee Game: https://jenbrieno.github.io/yvonne-pui-hw/Final project/coffee.html
+<br>Coffee Game: https://jenbrieno.github.io/yvonne-pui-hw/final-project/coffee.html
 
 <br><strong>Repository link:</strong> https://github.com/Jenbrieno/yvonne-pui-hw.git
